@@ -1,7 +1,6 @@
 import React from 'react'
 import {BaseContainer, SkillsContainer, WideContainer, HeadingText, SubText, TagText} from '../utils/Styles'
 import styled from 'styled-components'
-import Project from './Project'
 
 export default function Projects() {
     return (
