@@ -142,7 +142,7 @@ export default function Projects() {
                             <a href="/" className="btn btn-primary mr-5">
                                 Live Demo
                             </a>
-                            <a href="https://github.com/graysonsteakley/grayson-steakley-portfolio" target="_blank" className="btn btn-primary">
+                            <a href="https://github.com/graysonsteakley/grayson-steakley_port" target="_blank" className="btn btn-primary">
                             GitHub <i class="fa fa-github" aria-hidden="true"></i>
                             </a>
                         </div>
