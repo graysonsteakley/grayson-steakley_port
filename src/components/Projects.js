@@ -85,10 +85,10 @@ export default function Projects() {
                             </p>
                         </div>
                         <div className="card-footer">
-                            <a target ="_blank" href="https://react-tommys-pizza.netlify.app/" className="btn btn-primary mr-5">
+                            <a target ="_blank" href="https://oth-mockup.netlify.app/" className="btn btn-primary mr-5">
                                 Live Demo
                             </a>
-                            <a target="_blank" href="https://github.com/graysonsteakley/React-Tommys-Pizza" className="btn btn-primary">
+                            <a target="_blank" href="https://github.com/graysonsteakley/on_the_house_mockup" className="btn btn-primary">
                             GitHub <i class="fa fa-github" aria-hidden="true"></i>
                             </a>
                         </div>

@@ -50,7 +50,7 @@ export default class Skills extends React.Component {
 
             <SkillsContainer className="py-5 px-5">       
             <TagText className="lead text-left mr-4">&lt;p&gt;</TagText>    
-           {this.addText('JavaScript HTML5 CSS3 PHP Python jQuery React BootStrap SASS AJAX REST-APIs Axios Redux/Context-APIs MySQL WordPress (Custom-Theming) GitHub Adobe-Photoshop.')}
+           {this.addText('JavaScript HTML5 CSS3 PHP C# ASP.NET Python jQuery React BootStrap SASS AJAX REST-APIs Axios Redux/Context-APIs MySQL WordPress (Custom-Theming) GitHub Adobe-Photoshop.')}
            <TagText className="lead text-left ml-4">&lt;/p&gt;</TagText>
            </SkillsContainer>
 
