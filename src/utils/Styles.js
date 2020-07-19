@@ -17,7 +17,7 @@ export const BaseContainer = styled.div`
     justify-content: space-around; 
     align-items: center;   
     width: 100vw;
-    margin-top: 16.5vh;
+    margin-top: 10vh;
     }
 
     &.contact{
