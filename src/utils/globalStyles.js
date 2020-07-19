@@ -30,6 +30,7 @@ body {
         min-height: 100vh;
         font-size: inherit;
         min-height: 100vh;
+        background-color: #333333!important;
     
     }
 
