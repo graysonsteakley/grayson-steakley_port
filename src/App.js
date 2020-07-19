@@ -14,8 +14,9 @@ import Projects from './components/Projects'
 const AppContainer = styled.div`
 
 
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
+  position: relative;
   /* Temporary height */
   display: flex;
   justify-content: space-around;

@@ -167,6 +167,8 @@ class ContactMePage extends Component {
                 </div>
                 <div className="Contact-info">
                 Grayson Steakley 130 Fallow Buck Dr. Conroe, TX. 77384, USA
+                832-557-7560
+                grayson.steakley@gmail.com
                 </div>
 
             </SocialMediaWrapper>

@@ -3,16 +3,21 @@ import styled from 'styled-components'
 
 export const BaseContainer = styled.div`
 
-    width: 100%;
+    
+    width: 93vw;
     min-height: 100vh;
     background-color: #333333;
     display: flex;
     justify-content: center; 
     align-items: center;  
+    margin-left: auto;
+
     @media screen and (max-width: 800px) {
     flex-direction: column;
     justify-content: space-around; 
     align-items: center;   
+    width: 100vw;
+    margin-top: 16.5vh;
     }
 
     &.contact{
@@ -28,7 +33,7 @@ export const BaseContainer = styled.div`
 
 export const TextContainer = styled.div`
 
-    width: 70%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;

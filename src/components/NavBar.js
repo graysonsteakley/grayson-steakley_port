@@ -10,9 +10,13 @@ import SVGIcon from '../utils/SVGIcon'
 const NavContainer = styled.div`
 
     width: auto;
-    min-height: 100vh;
-    max-height: auto;
+    height: 100vh;
     
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 3;
+
     background-color: #212121;
     display: flex;
     flex-direction: column;
