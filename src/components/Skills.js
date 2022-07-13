@@ -20,7 +20,6 @@ export default class Skills extends React.Component {
 
   addText = (skillsStr) => {
     const skillsArr = skillsStr.split(" ");
-    console.log(skillsArr);
     const skillsText = skillsArr.map((skill, ind) => {
       return (
         <div
@@ -37,8 +36,6 @@ export default class Skills extends React.Component {
         </div>
       );
     });
-
-    console.log(skillsText);
     return skillsText;
   };
 

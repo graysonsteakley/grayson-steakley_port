@@ -11,7 +11,11 @@ export default function Projects() {
         <div className='row mx-3 mt-5'>
           <div className='card-deck'>
             <div className='card text-up-anim bg-dark text-white col-sm-6 col-12'>
-              <a target='_blank' href='https://merng-post-app.netlify.app/'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://merng-post-app.netlify.app/'
+              >
                 <div className='card-img-top overflow'>
                   <img
                     src='./images/merng.gif'
@@ -39,6 +43,7 @@ export default function Projects() {
               <div className='card-footer'>
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   href='https://merng-post-app.netlify.app/'
                   className='btn btn-primary mr-5'
                 >
@@ -46,6 +51,7 @@ export default function Projects() {
                 </a>
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   href='https://github.com/graysonsteakley/merng-post-app'
                   className='btn btn-primary'
                 >
@@ -81,7 +87,11 @@ export default function Projects() {
                     </div> */}
 
             <div className='card text-up-anim2 bg-dark text-white col-sm-6 col-12 overflow'>
-              <a href='https://oth-mockup.netlify.app/' target='_blank'>
+              <a
+                href='https://oth-mockup.netlify.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <div className='card-img-top overflow'>
                   <img
                     src='./images/mockup.gif'
@@ -105,6 +115,7 @@ export default function Projects() {
               <div className='card-footer'>
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   href='https://oth-mockup.netlify.app/'
                   className='btn btn-primary mr-5'
                 >
@@ -112,6 +123,7 @@ export default function Projects() {
                 </a>
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   href='https://github.com/graysonsteakley/on_the_house_mockup'
                   className='btn btn-primary'
                 >
@@ -126,6 +138,7 @@ export default function Projects() {
             <div className='card bg-dark text-white col-sm-6 col-12'>
               <a
                 target='_blank'
+                rel='noopener noreferrer'
                 href='https://react-eccommerce-site.netlify.app/'
               >
                 <div className='card-img-top overflow'>
@@ -152,6 +165,7 @@ export default function Projects() {
               <div className='card-footer'>
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   href='https://react-eccommerce-site.netlify.app/'
                   className='btn btn-primary mr-5'
                 >
@@ -159,6 +173,7 @@ export default function Projects() {
                 </a>
                 <a
                   target='_blank'
+                  rel='noopener noreferrer'
                   href='https://github.com/graysonsteakley/React-Async-Eccomerce/tree/master/src'
                   className='btn btn-primary'
                 >
@@ -195,6 +210,7 @@ export default function Projects() {
                 <a
                   href='https://github.com/graysonsteakley/grayson-steakley_port'
                   target='_blank'
+                  rel='noopener noreferrer'
                   className='btn btn-primary'
                 >
                   GitHub <i class='fa fa-github' aria-hidden='true'></i>

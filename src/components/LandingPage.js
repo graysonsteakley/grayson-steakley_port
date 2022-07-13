@@ -81,7 +81,6 @@ const LandingPage = () => {
         key={key}
         onMouseEnter={() =>
           setAnimatedRow2((prev) => {
-            console.log("entered");
             return { ...prev, [key]: true };
           })
         }
