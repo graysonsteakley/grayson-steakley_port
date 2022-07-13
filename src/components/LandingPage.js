@@ -152,7 +152,7 @@ const LandingPage = () => {
           </HeadingText>
           <TagText className='text-left'>&lt;p&gt;</TagText>
           <SubText className='btm-text pl-5'>
-            Full Stack Web Developer / Designer / UI-UX specialist
+            Full Stack Web Developer / Technical Consultant
           </SubText>
           <TagText className='text-left'>&lt;/p&gt;</TagText>
         </TextContainer>
