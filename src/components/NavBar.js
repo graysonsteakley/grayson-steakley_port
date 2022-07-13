@@ -138,7 +138,7 @@ function NavBar() {
             <SVGIcon name='home' width={50} fill={"#fff"} />
           </IconContainer>
         </NavLink>
-        <NavLink exact={true} to='/projects' activeClassName='active'>
+        <NavLink exact={true} to='/Work' activeClassName='active'>
           <IconContainer className='ml-3 mr-3 mt-2 mb-2'>
             <SVGIcon name='folder' width={50} fill={"#fff"} />
             {/* <span>Covid-19 Update</span> */}

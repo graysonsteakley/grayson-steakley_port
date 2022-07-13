@@ -504,3 +504,20 @@ p {
 .img-container img {
   width: 100%;
 }
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.card-footer .fa {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.card-footer .btn {
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  flex-grow: 0;
+}

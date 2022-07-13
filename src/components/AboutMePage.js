@@ -97,7 +97,8 @@ function AboutMePage() {
         <TagText className='lead text-left ml-4'>&lt;h3&gt;</TagText>
         {/* <view className="border border-bottom"/> */}
         <SubText className='text-left ml-5 showMe text-up-anim'>
-          I'm a full stack developer and UX/UI designer from Houston, Texas.
+          I'm a full stack developer and technical consultant from Houston,
+          Texas.
           <TagText className='lead text-left ml-4'>&lt;/h3&gt;</TagText>
         </SubText>
 
@@ -106,9 +107,9 @@ function AboutMePage() {
           className='text-left lead ml-5 showMe2 text-down-anim'
           style={{ color: "lavender" }}
         >
-          I love turning complex graphical problems into simple, intuitive, and
-          beautiful designs. I enjoy making designs and ideas into a reality for
-          buisnesses, agencies, and private-clients. When I am not coding you
+          I love turning complex problems into simple, and intuitive solutions.
+          I enjoy making both ui and architechtual designs into a reality for
+          enterprises, agencies, and private-clients. When I am not coding you
           can find me at the gym or on Discord chatting away.
         </p>
         <TagText className='lead text-left ml-4'>&lt;/p&gt;</TagText>

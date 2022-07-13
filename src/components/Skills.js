@@ -19,7 +19,7 @@ export default class Skills extends React.Component {
   };
 
   addText = (skillsStr) => {
-    const skillsArr = skillsStr.split(" ");
+    const skillsArr = skillsStr.split(",");
     const skillsText = skillsArr.map((skill, ind) => {
       return (
         <div
@@ -50,11 +50,18 @@ export default class Skills extends React.Component {
           </HeadingText>
 
           <SkillsContainer className='py-5 px-5'>
-            <TagText className='lead text-left mr-4'>&lt;p&gt;</TagText>
-            {this.addText(
-              "JavaScript HTML5 CSS3 PHP C# ASP.NET Python jQuery React BootStrap SASS AJAX REST-APIs Axios Redux/Context-APIs MySQL WordPress (Custom-Theming) GitHub Adobe-Photoshop."
-            )}
-            <TagText className='lead text-left ml-4'>&lt;/p&gt;</TagText>
+            <div className='d-flex flex-wrap justify-content-center'>
+              <TagText className='lead text-left mr-4'>&lt;p&gt;</TagText>
+              {this.addText(
+                "TypeScript, JavaScript, React, Next.js, HTML5, CSS3, Apollo GraphQL, jQuery, Plethra of UI libraries, AJAX, Axios, Redux, React Query, React Context API"
+              )}
+            </div>
+            <div className='d-flex flex-wrap justify-content-center'>
+              {this.addText(
+                "Python, Flask, Django, SQL (PostgreSQL MySQL), Graphene GraphQL"
+              )}
+              <TagText className='lead text-left ml-4'>&lt;/p&gt;</TagText>
+            </div>
           </SkillsContainer>
 
           <HeadingText className='text-up-anim h1 font-weight-bold'>
@@ -65,7 +72,7 @@ export default class Skills extends React.Component {
 
           <SkillsContainer className='py-5 px-5'>
             <TagText className='lead text-left mr-4'>&lt;p&gt;</TagText>
-            {this.addText("FireBase/NoSQL MongoDB Node.js MaterialUI")}
+            {this.addText("Cloud Systems, AWS, React_v.18 Rust")}
             <TagText className='lead text-left ml-4'>&lt;/p&gt;</TagText>
           </SkillsContainer>
         </WideContainer>

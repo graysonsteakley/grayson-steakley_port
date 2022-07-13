@@ -6,7 +6,7 @@ import AboutMePage from "./components/AboutMePage.js";
 import ContactMePage from "./components/ContactMePage";
 import LandingPage from "./components/LandingPage";
 import NavBar from "./components/NavBar";
-import Projects from "./components/Projects";
+import Work from "./components/Work";
 import Skills from "./components/Skills";
 
 const AppContainer = styled.div`
@@ -31,7 +31,7 @@ function App() {
       <Router>
         <NavBar />
         <Route path='/' component={LandingPage} exact />
-        <Route path='/projects' component={Projects} exact />
+        <Route path='/Work' component={Work} exact />
         <Route path='/about-me' component={AboutMePage} exact />
         <Route path='/contact-me' component={ContactMePage} exact />
         <Route path='/skills' component={Skills} exact />

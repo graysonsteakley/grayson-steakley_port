@@ -181,8 +181,8 @@ const LandingPage = () => {
       </BaseContainer>
 
       <Arrow className='arrow'>
-        <NavLink exact={true} to='/projects' activeClassName='active'>
-          <SubText className='ml-neg-2 hover-arrow'>Projects</SubText>
+        <NavLink exact={true} to='/Work' activeClassName='active'>
+          <SubText className='ml-neg-2 hover-arrow'>Work</SubText>
           <SVGIcon
             name='arrow'
             className='ml-2'
