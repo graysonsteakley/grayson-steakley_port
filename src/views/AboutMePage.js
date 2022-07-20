@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import styled from "styled-components";
 import {
   BaseContainer,
@@ -24,15 +25,22 @@ function AboutMePage() {
   const [animated6, setAnimated6] = useState(true);
   const [animated7, setAnimated7] = useState(true);
 
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0,
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
+
   return (
-    <BaseContainer>
+    <BaseContainer ref={ref} inView={inView}>
       <TextContainer>
         <TagText className='lead text-left ml-4'>&lt;h1&gt;</TagText>
         <HeadingText className='text-left ml-5 text-up-anim2'>
           <Sp
             onMouseEnter={() => setAnimated(true)}
             onAnimationEnd={() => setAnimated(false)}
-            className={animated ? "letter-up-anim" : ""}
+            className={animated && inView ? "letter-up-anim" : ""}
           >
             a
           </Sp>
@@ -41,7 +49,7 @@ function AboutMePage() {
             <Sp
               onMouseEnter={() => setAnimated2(true)}
               onAnimationEnd={() => setAnimated2(false)}
-              className={animated2 ? "letter-up-anim" : ""}
+              className={animated2 && inView ? "letter-up-anim" : ""}
             >
               b
             </Sp>
@@ -50,7 +58,7 @@ function AboutMePage() {
             <Sp
               onMouseEnter={() => setAnimated3(true)}
               onAnimationEnd={() => setAnimated3(false)}
-              className={animated3 ? "letter-up-anim" : ""}
+              className={animated3 && inView ? "letter-up-anim" : ""}
             >
               o
             </Sp>
@@ -59,7 +67,7 @@ function AboutMePage() {
             <Sp
               onMouseEnter={() => setAnimated4(true)}
               onAnimationEnd={() => setAnimated4(false)}
-              className={animated4 ? "letter-up-anim" : ""}
+              className={animated4 && inView ? "letter-up-anim" : ""}
             >
               u
             </Sp>
@@ -68,7 +76,7 @@ function AboutMePage() {
             <Sp
               onMouseEnter={() => setAnimated5(true)}
               onAnimationEnd={() => setAnimated5(false)}
-              className={animated5 ? "letter-up-anim" : ""}
+              className={animated5 && inView ? "letter-up-anim" : ""}
             >
               t&nbsp;
             </Sp>
@@ -77,7 +85,7 @@ function AboutMePage() {
             <Sp
               onMouseEnter={() => setAnimated6(true)}
               onAnimationEnd={() => setAnimated6(false)}
-              className={animated6 ? "letter-up-anim" : ""}
+              className={animated6 && inView ? "letter-up-anim" : ""}
             >
               m
             </Sp>
@@ -86,7 +94,7 @@ function AboutMePage() {
             <Sp
               onMouseEnter={() => setAnimated7(true)}
               onAnimationEnd={() => setAnimated7(false)}
-              className={animated7 ? "letter-up-anim" : ""}
+              className={animated7 && inView ? "letter-up-anim" : ""}
             >
               e
             </Sp>
@@ -96,7 +104,9 @@ function AboutMePage() {
 
         <TagText className='lead text-left ml-4'>&lt;h3&gt;</TagText>
         {/* <view className="border border-bottom"/> */}
-        <SubText className='text-left ml-5 showMe text-up-anim'>
+        <SubText
+          className={`text-left ml-5 showMe ${inView && `text-up-anim`}`}
+        >
           I'm a full stack developer and technical consultant from Houston,
           Texas.
           <TagText className='lead text-left ml-4'>&lt;/h3&gt;</TagText>
@@ -104,7 +114,9 @@ function AboutMePage() {
 
         <TagText className='lead text-left ml-4'>&lt;p&gt;</TagText>
         <p
-          className='text-left lead ml-5 showMe2 text-down-anim'
+          className={`text-left lead ml-5 showMe2 ${
+            inView && `text-down-anim`
+          }`}
           style={{ color: "lavender" }}
         >
           I love turning complex problems into simple, and intuitive solutions.
@@ -115,11 +127,12 @@ function AboutMePage() {
         <TagText className='lead text-left ml-4'>&lt;/p&gt;</TagText>
       </TextContainer>
       <MediaContainer>
-        <div className='img-container text-up-anim2 overflow'>
+        <div className={`img-container ${inView && `text-up-anim`} overflow`}>
           <img
             src='./images/Profile-pic.jpg'
             alt='grayson portrait'
             className='img-hover'
+            load='lazy'
           />
         </div>
       </MediaContainer>

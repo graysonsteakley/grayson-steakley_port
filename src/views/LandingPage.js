@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Element } from "react-scroll";
 import {
   BaseContainer,
   TextContainer,
   HeadingText,
   MediaContainer,
+  Layout,
   TagText,
 } from "../utils/Styles";
 import SVGIcon from "../utils/SVGIcon";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import AboutMePage from "./AboutMePage";
+import ContactMePage from "./ContactMePage";
+import Skills from "./Skills";
+import Work from "./Work";
 
 const SubText = styled.h4`
   font-size: 1rem;
@@ -17,15 +23,15 @@ const SubText = styled.h4`
   color: darkgrey;
 `;
 
-const Arrow = styled.div`
-  position: fixed;
-  top: 83vh;
-  left: 50%;
-  width: 100px;
-  @media screen and (max-width: 760px) {
-    left: 45%;
-  }
-`;
+// const Arrow = styled.div`
+//   position: fixed;
+//   top: 83vh;
+//   left: 50%;
+//   width: 100px;
+//   @media screen and (max-width: 760px) {
+//     left: 45%;
+//   }
+// `;
 
 const to_obj = (row, prefix) => {
   const row_obj = {};
@@ -134,63 +140,67 @@ const LandingPage = () => {
 
   return (
     <React.Fragment>
-      <BaseContainer>
-        <TextContainer className='ml-5'>
-          <TagText className=''>&lt;h1&gt;</TagText>
-          <HeadingText
-            className='mt-2 pl-5 top-text text-left'
-            style={{ fontSize: "4rem" }}
-          >
-            {Row1}
-            <br />
-            {Row2}
-            <br />
-          </HeadingText>
-          <HeadingText className='mb-2 pl-5' style={{ fontSize: "4rem" }}>
-            {Row3}
-            <TagText className='text-left'>&lt;/h1&gt;</TagText>
-          </HeadingText>
-          <TagText className='text-left'>&lt;p&gt;</TagText>
-          <SubText className='btm-text pl-5'>
-            Full Stack Web Developer / Technical Consultant
-          </SubText>
-          <TagText className='text-left'>&lt;/p&gt;</TagText>
-        </TextContainer>
+      <Layout>
+        <Element id='home' name='home'>
+          <BaseContainer inView={true}>
+            <TextContainer className='ml-5'>
+              <TagText className=''>&lt;h1&gt;</TagText>
+              <HeadingText
+                className='mt-2 pl-5 top-text text-left'
+                style={{ fontSize: "4rem" }}
+              >
+                {Row1}
+                <br />
+                {Row2}
+                <br />
+              </HeadingText>
+              <HeadingText className='mb-2 pl-5' style={{ fontSize: "4rem" }}>
+                {Row3}
+                <TagText className='text-left'>&lt;/h1&gt;</TagText>
+              </HeadingText>
+              <TagText className='text-left'>&lt;p&gt;</TagText>
+              <SubText className='btm-text pl-5'>
+                Full Stack Web Developer / Technical Consultant
+              </SubText>
+              <TagText className='text-left'>&lt;/p&gt;</TagText>
+            </TextContainer>
 
-        <MediaContainer className=''>
-          <SVGIcon className='rotate-icon1' name='html' width={100} />
-          <SVGIcon
-            className='rotate-icon2'
-            name='css'
-            width={100}
-            fill={"#fff "}
-          />
-          <SVGIcon
-            className='rotate-icon3'
-            name='js'
-            width={100}
-            fill={"#fff "}
-          />
-          <SVGIcon
-            className='rotate-icon4'
-            name='react'
-            width={100}
-            fill={"#fff "}
-          />
-        </MediaContainer>
-      </BaseContainer>
-
-      <Arrow className='arrow'>
-        <NavLink exact={true} to='/Work' activeClassName='active'>
-          <SubText className='ml-neg-2 hover-arrow'>Work</SubText>
-          <SVGIcon
-            name='arrow'
-            className='ml-2'
-            width={120}
-            fill={"lightblue"}
-          />
-        </NavLink>
-      </Arrow>
+            <MediaContainer className=''>
+              <SVGIcon className='rotate-icon1' name='html' width={100} />
+              <SVGIcon
+                className='rotate-icon2'
+                name='css'
+                width={100}
+                fill={"#fff "}
+              />
+              <SVGIcon
+                className='rotate-icon3'
+                name='js'
+                width={100}
+                fill={"#fff "}
+              />
+              <SVGIcon
+                className='rotate-icon4'
+                name='react'
+                width={100}
+                fill={"#fff "}
+              />
+            </MediaContainer>
+          </BaseContainer>
+        </Element>
+        <Element id='work' name='work'>
+          <Work />
+        </Element>
+        <Element id='about-me' name='about-me'>
+          <AboutMePage />
+        </Element>
+        <Element id='skills' name='skills'>
+          <Skills />
+        </Element>
+        <Element id='contact-me' name='contact-me'>
+          <ContactMePage />
+        </Element>
+      </Layout>
     </React.Fragment>
   );
 };

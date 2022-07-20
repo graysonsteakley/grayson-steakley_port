@@ -501,6 +501,10 @@ p {
   border-radius: 999px;
 }
 
+.pointer {
+  cursor: pointer !important;
+}
+
 .img-container img {
   width: 100%;
 }

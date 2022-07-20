@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import styled from "styled-components";
 import "./App.css";
-import AboutMePage from "./components/AboutMePage.js";
-import ContactMePage from "./components/ContactMePage";
-import LandingPage from "./components/LandingPage";
+import AboutMePage from "./views/AboutMePage.js";
+import ContactMePage from "./views/ContactMePage";
+import LandingPage from "./views/LandingPage";
 import NavBar from "./components/NavBar";
-import Work from "./components/Work";
-import Skills from "./components/Skills";
+import Work from "./views/Work";
+import Skills from "./views/Skills";
 
 const AppContainer = styled.div`
   width: 100vw;

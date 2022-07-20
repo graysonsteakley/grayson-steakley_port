@@ -1,16 +1,27 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import { BaseContainer, HeadingText } from "../utils/Styles";
 
 export default function Work() {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0,
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
   return (
-    <BaseContainer>
+    <BaseContainer ref={ref} inView={inView}>
       <div className='container'>
         <div className='row mx-3 mt-5'>
           <HeadingText className='text-center'>Past Work</HeadingText>
         </div>
         <div className='row mx-3 mt-5'>
           <div className='card-deck'>
-            <div className='card text-up-anim bg-dark text-white col-sm-6 col-12'>
+            <div
+              className={`card ${
+                inView && "text-up-anim"
+              } bg-dark text-white col-sm-6 col-12`}
+            >
               <a
                 target='_blank'
                 rel='noopener noreferrer'
@@ -54,7 +65,11 @@ export default function Work() {
               </div>
             </div>
 
-            <div className='card text-up-anim2 bg-dark text-white col-sm-6 col-12 overflow'>
+            <div
+              className={`card ${
+                inView && "text-up-anim2"
+              } bg-dark text-white col-sm-6 col-12 overflow`}
+            >
               <a
                 href='https://www.shuup.com/'
                 target='_blank'

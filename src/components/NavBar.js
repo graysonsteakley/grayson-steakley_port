@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 import SVGIcon from "../utils/SVGIcon";
 
@@ -130,38 +131,74 @@ function NavBar() {
   return (
     <NavContainer>
       <AppGroupContainer>
-        <NavLink exact={true} to='/' activeClassName='active'>
+        <Link
+          to='home'
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClassName='active'
+          className='pointer'
+        >
           <ImgContainer className='logo'></ImgContainer>
-        </NavLink>
-        <NavLink exact={true} to='/' activeClassName='active'>
+        </Link>
+        <Link
+          to='home'
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClassName='active'
+        >
           <IconContainer className='ml-3 mr-3 mt-2 mb-2'>
             <SVGIcon name='home' width={50} fill={"#fff"} />
           </IconContainer>
-        </NavLink>
-        <NavLink exact={true} to='/Work' activeClassName='active'>
+        </Link>
+        <Link
+          to='work'
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClassName='active'
+        >
           <IconContainer className='ml-3 mr-3 mt-2 mb-2'>
             <SVGIcon name='folder' width={50} fill={"#fff"} />
-            {/* <span>Covid-19 Update</span> */}
           </IconContainer>
-        </NavLink>
-        <NavLink exact={true} to='/about-me' activeClassName='active'>
+        </Link>
+        <Link
+          to='about-me'
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClassName='active'
+          className='pointer'
+        >
           <IconContainer className='ml-3 mr-3 mt-2 mb-2'>
             <SVGIcon name='user' width={50} fill={"#fff"} />
-            {/* <span>Covid-19 Update</span> */}
           </IconContainer>
-        </NavLink>
-        <NavLink exact={true} to='/skills' activeClassName='active'>
+        </Link>
+        <Link
+          to='skills'
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClassName='active'
+          className='pointer'
+        >
           <IconContainer className='ml-3 mr-3 mt-2 mb-2'>
             <SVGIcon name='cogwheel' width={50} fill={"#fff"} />
-            {/* <span>Covid-19 Update</span> */}
           </IconContainer>
-        </NavLink>
-        <NavLink exact={true} to='/contact-me' activeClassName='active'>
+        </Link>
+        <Link
+          to='contact-me'
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClassName='active'
+          className='pointer'
+        >
           <IconContainer className='ml-3 mr-3 mt-2 mb-2'>
             <SVGIcon name='message' width={50} fill={"#fff"} />
-            {/* <span>Contact Me</span> */}
           </IconContainer>
-        </NavLink>
+        </Link>
       </AppGroupContainer>
       <SocialGroupContainer>
         <a
