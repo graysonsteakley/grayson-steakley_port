@@ -73,8 +73,9 @@ const ContactMePage = () => {
         <MainContentWrapper>
           <form
             name="contact-me"
-            netlify
-            action="POST"
+            data-netlify="true"
+            action="/"
+            method="POST"
             className={`${inView && "text-down-anim"} text-light login-form`}
           >
             <input type="hidden" name="form-name" value="contact-me" />
