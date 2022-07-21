@@ -73,7 +73,7 @@ const ContactMePage = () => {
         <MainContentWrapper>
           <form
             name="contact-me"
-            data-netlify="true"
+            netlify
             action="POST"
             className={`${inView && "text-down-anim"} text-light login-form`}
           >
