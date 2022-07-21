@@ -96,12 +96,12 @@ const ContactMePage = () => {
                 placeholder=""
               />
             </FormGroup>
-            <Button
+            <button
               className="btn-lg btn-dark btn-block mt-5 btn-hover"
               type="submit"
             >
               Send
-            </Button>
+            </button>
           </form>
 
           <SocialMediaWrapper className={`${inView && "text-down-anim"}`}>
