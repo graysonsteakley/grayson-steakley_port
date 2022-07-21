@@ -30,7 +30,7 @@ function App() {
     <AppContainer className=''>
       <Router>
         <NavBar />
-        <Route path='/' component={LandingPage} exact />
+        <Route path='/' component={LandingPage} />
         <Route path='/Work' component={Work} exact />
         <Route path='/about-me' component={AboutMePage} exact />
         <Route path='/contact-me' component={ContactMePage} exact />

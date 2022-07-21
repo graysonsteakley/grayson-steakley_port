@@ -221,6 +221,7 @@ export const SocialMediaWrapper = styled.div`
 
   > .Contact-info {
     margin-top: 2rem;
+    font-size: 1.5rem;
     color: grey;
   }
 `;
