@@ -4,9 +4,9 @@ import { FaChevronDown } from "react-icons/fa";
 export const ArrowIndicator = () => {
   return (
     <FaChevronDown
-      color="cyan"
-      className="fixed-arrow animate-flicker"
-      size="4rem"
+      color='cyan'
+      className='fixed-arrow animate-flicker'
+      size='4rem'
     />
   );
 };

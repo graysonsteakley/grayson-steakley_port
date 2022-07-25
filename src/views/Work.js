@@ -89,8 +89,8 @@ export default function Work() {
                   Shuup E-commerce Platform Development
                 </h4>
                 <p className='card-text'>
-                  React, Jquery, Material-UI, Jinja, PostgreSQL, Python, Django,
-                  Django-Rest
+                  React, Jquery, JavaScript, Material-UI, Jinja2, PostgreSQL,
+                  Python, Django, django-rest
                 </p>
                 <p className='card-text'>
                   Develop React and Django based applications to create single,
@@ -144,7 +144,8 @@ export default function Work() {
               <div className='card-body'>
                 <h4 className='card-title'>The Canvas</h4>
                 <p className='card-text'>
-                  Django, Jinja2, Square Space API, Jquery, Lodash, Firebase
+                  React, TypeScript, python, Django, postgreSQL, Square Space
+                  API, Firebase
                 </p>
                 <p className='card-text'>
                   Built a designer brand clothes marketplace, with a django back
@@ -177,15 +178,15 @@ export default function Work() {
               <div className='card-body'>
                 <h4 className='card-title'>bookelevent</h4>
                 <p className='card-text'>
-                  Python, Django, Shuup appointments, Google Calendar API,
-                  Jinja2, jQuery, React Micro Components
+                  React, Typescript, python, Django, in-house appointment
+                  module, Google Calendar API
                 </p>
                 <p className='card-text'>
-                  Help use shuup appointments to release custom appointment
-                  based product listings. Did all of the front-end work, and
-                  helped create 3rd party integration with google calendars.
-                  Created custom plugins for product curation and gallery
-                  listings.
+                  Help use shuup's in house appointment module to release custom
+                  appointment based product listings. Did all of the front-end
+                  work, and helped create 3rd party integration with google
+                  calendars. Created custom plugins for product curation and
+                  gallery listings.
                 </p>
               </div>
               <div className='card-footer'>
@@ -215,7 +216,8 @@ export default function Work() {
               <div className='card-body'>
                 <h4 className='card-title'>REALTYONEGROUP</h4>
                 <p className='card-text'>
-                  React, Material-UI, Python, Django, Docusign API, PostgreSQL
+                  React, Typescript, Material-UI, python, Django, django-rest,
+                  Docusign API, PostgreSQL
                 </p>
                 <p className='card-text'>
                   Developed the on-boarding React Application for
@@ -251,8 +253,8 @@ export default function Work() {
               <div className='card-body'>
                 <h4 className='card-title'>Givesome</h4>
                 <p className='card-text'>
-                  Python, Django, Shuup appointments, Google Calendar API,
-                  Jinja2, jQuery, React Micro Components
+                  jQuery, React Micro Components, JavaScript, python, Jinja2,
+                  Django, in-house appointment module, Google Calendar API
                 </p>
                 <p className='card-text'>
                   Create Charity and Company based donation platform. Charities

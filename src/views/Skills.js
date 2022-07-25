@@ -58,7 +58,7 @@ const Skills = () => {
           </div>
           <div className='d-flex flex-wrap justify-content-center'>
             {addText(
-              "Python, Flask, Django, SQL (PostgreSQL MySQL), Graphene GraphQL"
+              "Python, Flask, Django, SQL (PostgreSQL MySQL), Graphene GraphQL, Celery, Redis"
             )}
             <TagText className='lead text-left ml-4'>&lt;/p&gt;</TagText>
           </div>

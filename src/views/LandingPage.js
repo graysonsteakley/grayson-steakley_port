@@ -25,16 +25,6 @@ const SubText = styled.h4`
   color: darkgrey;
 `;
 
-// const Arrow = styled.div`
-//   position: fixed;
-//   top: 83vh;
-//   left: 50%;
-//   width: 100px;
-//   @media screen and (max-width: 760px) {
-//     left: 45%;
-//   }
-// `;
-
 const to_obj = (row, prefix) => {
   const row_obj = {};
   [...row].forEach((letter, ind) => {
