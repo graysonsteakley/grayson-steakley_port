@@ -145,12 +145,12 @@ export default function Work() {
                 <h4 className='card-title'>The Canvas</h4>
                 <p className='card-text'>
                   React, TypeScript, python, Django, postgreSQL, Square Space
-                  API, Firebase
+                  API
                 </p>
                 <p className='card-text'>
                   Built a designer brand clothes marketplace, with a django back
-                  end, and very customized front. Authorization through
-                  firebase. Integrated square space blog through api calls.
+                  end, and very customized front. Integrated square space blog
+                  through api calls.
                 </p>
               </div>
               <div className='card-footer'>

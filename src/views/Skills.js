@@ -18,6 +18,12 @@ const Skills = () => {
     rootMargin: "-100px 0px",
   });
 
+  class Bar extends Foo {
+    classMethod() {
+      return parent.classMethod() + ", too";
+    }
+  }
+
   const addText = React.useCallback(
     (skillsStr) => {
       const skillsArr = skillsStr.split(",");
