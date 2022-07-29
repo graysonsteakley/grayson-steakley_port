@@ -30,13 +30,14 @@ export const BaseContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: auto;
+  padding: 0 10em;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    margin-top: 10vh;
+    width: 100%;
+    min-height: 300px;
   }
 
   &.contact {
@@ -55,7 +56,6 @@ export const Layout = styled.div`
 
 export const TextContainer = styled.div`
 
-    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,6 @@ export const TextContainer = styled.div`
     @media screen and (max-width: 800px) {
         width: 100%
         align-items: center;
-        margin-top: -20rem;
     }
 
 `;
@@ -90,13 +89,12 @@ export const SkillsContainer = styled.div`
 
 export const MediaContainer = styled.div`
     width: 30%;
-    height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 800px) {
-        margin-top: -50vh;
+        margin-top: 3rem;
     }
 }
 `;
@@ -112,11 +110,18 @@ export const TagText = styled.span`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const HeadingText = styled.h1`
   font-size: 5rem;
   /* text-transform: lowercase; */
+
+  @media screen and (max-width: 800px) {
+    font-size: 4rem;
+  }
   letter-spacing: 2px;
   color: lavender;
   font-family: "Montserrat", sans-serif;
@@ -126,6 +131,7 @@ export const SubText = styled.p`
   font-size: 2rem;
   letter-spacing: 2px;
   color: lavender;
+  margin: 1rem;
 `;
 
 export const SocialIconWrapper = styled.div`

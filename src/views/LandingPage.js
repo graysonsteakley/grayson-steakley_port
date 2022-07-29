@@ -19,10 +19,11 @@ import { ArrowIndicator } from "../components/ArrowIndicator";
 import { useInView } from "react-intersection-observer";
 
 const SubText = styled.h4`
-  font-size: 1rem;
+  font-size: initial;
   font-weight: bold;
   letter-spacing: 2px;
   color: darkgrey;
+  margin: 1rem;
 `;
 
 const to_obj = (row, prefix) => {
@@ -141,64 +142,64 @@ const LandingPage = () => {
     <React.Fragment>
       <Layout>
         {inView && <ArrowIndicator />}
-        <Element id="home" name="home">
-          <BaseContainer inView={true}>
-            <TextContainer className="ml-5">
-              <TagText className="">&lt;h1&gt;</TagText>
-              <HeadingText
-                ref={ref}
-                className="mt-2 pl-5 top-text text-left"
-                style={{ fontSize: "4rem" }}
-              >
+        <Element className='section-container top-offset' id='home' name='home'>
+          <BaseContainer className='jc-sb' inView={true}>
+            <TextContainer className='ml-5'>
+              <TagText className=''>&lt;h1&gt;</TagText>
+              <HeadingText ref={ref} className='mt-2 top-text text-left'>
                 {Row1}
                 <br />
                 {Row2}
                 <br />
               </HeadingText>
-              <HeadingText className="mb-2 pl-5" style={{ fontSize: "4rem" }}>
+              <HeadingText className='mb-2' style={{ fontSize: "4rem" }}>
                 {Row3}
-                <TagText className="text-left">&lt;/h1&gt;</TagText>
+                <TagText className='text-left'>&lt;/h1&gt;</TagText>
               </HeadingText>
-              <TagText className="text-left">&lt;p&gt;</TagText>
-              <SubText className="btm-text pl-5">
+              <TagText className='text-left'>&lt;p&gt;</TagText>
+              <SubText className='btm-text'>
                 Full Stack Web Developer / Technical Consultant
               </SubText>
-              <TagText className="text-left">&lt;/p&gt;</TagText>
+              <TagText className='text-left'>&lt;/p&gt;</TagText>
             </TextContainer>
 
-            <MediaContainer className="">
-              <SVGIcon className="rotate-icon1" name="html" width={100} />
+            <MediaContainer className=''>
+              <SVGIcon className='rotate-icon1' name='html' width={100} />
               <SVGIcon
-                className="rotate-icon2"
-                name="css"
+                className='rotate-icon2'
+                name='css'
                 width={100}
                 fill={"#fff "}
               />
               <SVGIcon
-                className="rotate-icon3"
-                name="js"
+                className='rotate-icon3'
+                name='js'
                 width={100}
                 fill={"#fff "}
               />
               <SVGIcon
-                className="rotate-icon4"
-                name="react"
+                className='rotate-icon4'
+                name='react'
                 width={100}
                 fill={"#fff "}
               />
             </MediaContainer>
           </BaseContainer>
         </Element>
-        <Element id="work" name="work">
+        <Element className='section-container' id='work' name='work'>
           <Work />
         </Element>
-        <Element id="about-me" name="about-me">
+        <Element className='section-container' id='about-me' name='about-me'>
           <AboutMePage />
         </Element>
-        <Element id="skills" name="skills">
+        <Element className='section-container' id='skills' name='skills'>
           <Skills />
         </Element>
-        <Element id="contact-me" name="contact-me">
+        <Element
+          className='section-container'
+          id='contact-me'
+          name='contact-me'
+        >
           <ContactMePage />
         </Element>
       </Layout>

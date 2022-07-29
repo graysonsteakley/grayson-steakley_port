@@ -11,11 +11,13 @@ export default function Work() {
   });
   return (
     <BaseContainer ref={ref} inView={inView}>
-      <div className='container'>
-        <div className='row mx-3 mt-5'>
-          <HeadingText className='text-center'>Past Work</HeadingText>
+      <div className=''>
+        <div className='row mx-3'>
+          <HeadingText className='text-center' style={{ margin: "5rem 0" }}>
+            Past Work
+          </HeadingText>
         </div>
-        <div className='row mx-3 mt-5'>
+        <div className='row mx-3'>
           <div className='card-deck'>
             <div
               className={`card ${
@@ -75,7 +77,10 @@ export default function Work() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <div className='card-img-top overflow'>
+                <div
+                  className='card-img-top overflow'
+                  style={{ background: "#fff" }}
+                >
                   <img
                     src='./images/shuup.png'
                     alt='Shuup'
@@ -125,8 +130,8 @@ export default function Work() {
             </div>
           </div>
         </div>
-        <div className='row mx-3 mt-5'>
-          <div className='card-deck mb-5'>
+        <div className='row mx-3'>
+          <div className='card-deck'>
             <div className='card bg-dark text-white col-sm-6 col-12'>
               <a
                 target='_blank'
@@ -202,7 +207,7 @@ export default function Work() {
         </div>
 
         <div className='row mx-3 mt-2'>
-          <div className='card-deck mb-5'>
+          <div className='card-deck'>
             <div className='card bg-dark text-white col-sm-6 col-12'>
               <a href='https://www.realtyonegroup.com/'>
                 <div className='card-img-top overflow'>

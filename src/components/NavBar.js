@@ -4,10 +4,10 @@ import styled from "styled-components";
 import SVGIcon from "../utils/SVGIcon";
 
 const NavContainer = styled.div`
-  width: auto;
+  width: 100px;
   height: 100vh;
 
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 3;
@@ -215,7 +215,12 @@ function NavBar() {
           rel='noopener noreferrer'
         >
           <IconContainer className='github ml-3 mr-3 mt-2 mb-2'>
-            <SVGIcon name='github' width={50} fill={"#55ACEE"} />
+            <SVGIcon
+              className='git-icon'
+              name='github'
+              width={50}
+              fill={"#55ACEE"}
+            />
             {/* <span>Covid-19 Update</span> */}
           </IconContainer>
         </a>

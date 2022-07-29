@@ -20,31 +20,55 @@ label {
 }
 
 @keyframes flickerAnimation {
-  0%   { opacity:0.5; }
-  50%  { opacity:0; }
-  100% { opacity:0.5; }
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
-@-o-keyframes flickerAnimation{
-  0%   { opacity:0.5; }
-  50%  { opacity:0; }
-  100% { opacity:0.5; }
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
-@-moz-keyframes flickerAnimation{
-  0%   { opacity:0.5; }
-  50%  { opacity:0; }
-  100% { opacity:0.5; }
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
-@-webkit-keyframes flickerAnimation{
-  0%   { opacity:0.5; }
-  50%  { opacity:0; }
-  100% { opacity:0.5; }
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 
 .animate-flicker {
-   -webkit-animation: flickerAnimation 3s infinite;
-   -moz-animation: flickerAnimation 3s infinite;
-   -o-animation: flickerAnimation 3s infinite;
-    animation: flickerAnimation 3s infinite;
+  -webkit-animation: flickerAnimation 3s infinite;
+  -moz-animation: flickerAnimation 3s infinite;
+  -o-animation: flickerAnimation 3s infinite;
+  animation: flickerAnimation 3s infinite;
 }
 
 .fixed-arrow {
@@ -53,6 +77,17 @@ label {
   transform: translateX(-50%);
   top: 86%;
   z-index: 3;
+}
+
+@media screen and (min-wdth: 801px) {
+  .jc-sb {
+    justify-content: space-between !important;
+  }
+}
+
+.contact {
+  padding: 0 !important;
+  margin-bottom: 20rem;
 }
 
 .contact-input {
@@ -71,36 +106,11 @@ textarea {
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 1480px) {
-  html {
-    font-size: 75%;
-  }
+html {
+  font-size: calc(5px + 0.340625vw);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 67.5%;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 45%;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  html {
-    font-size: 25%;
-  }
-}
-
 /* ANIMATIONS */
 
 @keyframes colorChange {
@@ -157,6 +167,12 @@ textarea {
     opacity: 40;
     color: lightblue;
   }
+}
+
+.card-deck {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  max-width: 1200px;
 }
 
 .hover-arrow {
@@ -520,6 +536,52 @@ span {
   transition: all 0.3s;
   z-index: 0;
 }
+h4,
+p {
+  font-size: calc(8px + 0.340625vw);
+}
+@media screen and (max-width: 800px) {
+  .top-offset {
+    margin-top: 15vh;
+  }
+  .img-hover {
+    object-fit: contain;
+    width: 100%;
+  }
+  /* .card {
+    flex-direction: column-reverse;
+  } */
+  /* .card-text,
+  .card-title,
+  .card-footer,
+  .card-body {
+    display: none !important;
+  } */
+
+  .card-title {
+    font-size: 3rem !important;
+    font-weight: 500;
+  }
+  circle {
+    width: 20px;
+  }
+  .git-icon {
+    width: 16px;
+  }
+  .section-container {
+    margin: 40px 0;
+    width: 100%;
+  }
+  form {
+    width: 80% !important;
+  }
+  span {
+    display: inline;
+  }
+  html {
+    font-size: calc(5px + 0.50625vw);
+  }
+}
 
 .img-hover:hover {
   transform: scale(1.2);
@@ -531,10 +593,6 @@ form {
 
 textarea {
   width: 100%;
-}
-
-p {
-  font-size: 1.2rem !important;
 }
 
 .img-container {
